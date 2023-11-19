@@ -108,7 +108,7 @@ st.write('Premise:', selected_premise)
 st.write('Time: ', time)
 st.write('Day: ', day)
 st.write('Month: ', month)
-st.write('Day of the week', selected_day_of_week)
+st.write('Day of the week:', selected_day_of_week)
 
 # Button for prediction
 if st.sidebar.button('Predict Crime Type'):
