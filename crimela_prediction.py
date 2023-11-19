@@ -105,7 +105,7 @@ reshaped_feature_array = feature_array.reshape(1, -1)  # Reshape to a 2D array w
 # st.write('Feature Array:', feature_array)
 
 # Button for prediction
-if st.button('Predict Crime Type'):
+if st.sidebar.button('Predict Crime Type'):
     # Placeholder for model prediction
     # prediction = data.predict(reshaped_feature_array)  # Replace this with actual prediction code
     # Define the reverse mapping dictionary
@@ -122,6 +122,3 @@ if st.button('Predict Crime Type'):
     # Decode the predicted crime type!
     predicted_crime_type = reverse_mapping.get(int(prediction), 'Unknown')
     st.write('Predicted Crime Type:', predicted_crime_type)
-
-    # END
-    # END line 2
