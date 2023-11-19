@@ -121,6 +121,9 @@ if st.button('Predict Crime Type'):
     7: 'Miscellaneous and Other Crimes'
     }
 
-    # Decode the predicted crime type
+    # Decode the predicted crime type!
     predicted_crime_type = reverse_mapping.get(int(prediction), 'Unknown')
     st.write('Predicted Crime Type:', predicted_crime_type)
+
+    # END
+    # END line 2
