@@ -13,7 +13,7 @@ def decompress_pickle(file):
     data = cPickle.load(data)
     return data
 
-data = decompress_pickle('crimela_pkl.pbz2')
+# data = decompress_pickle('crimela_pkl.pbz2')
 
  # Streamlit app
 st.title('Crime Type Prediction')
@@ -109,7 +109,7 @@ reshaped_feature_array = feature_array.reshape(1, -1)  # Reshape to a 2D array w
 # Button for prediction
 if st.button('Predict Crime Type'):
     # Placeholder for model prediction
-    prediction = data.predict(reshaped_feature_array)  # Replace this with actual prediction code
+    # prediction = data.predict(reshaped_feature_array)  # Replace this with actual prediction code
     # Define the reverse mapping dictionary
     reverse_mapping = {
     1: 'Violent Crimes',
