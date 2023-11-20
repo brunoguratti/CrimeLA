@@ -119,13 +119,15 @@ if st.sidebar.button('Predict Crime Type'):
     prediction = data.predict(reshaped_feature_array)  # Replace this with actual prediction code
     # Define the reverse mapping dictionary
     reverse_mapping = {
-    1: 'Violent Crimes',
-    2: 'Property Crimes',
-    3: 'Fraud and White-Collar Crimes',
-    4: 'Sexual Offenses',
-    5: 'Weapons and Firearm Offenses',
-    6: 'Disturbance and Public Order',
-    7: 'Miscellaneous and Other Crimes'
+    0: 'Assault and Violence',
+    1: 'Child-related Offenses',
+    2: 'Fraud and White-Collar Crimes',
+    3: 'Other',
+    4: 'Property Crimes',
+    5: 'Sexual Offenses',
+    6: 'Theft',
+    7: 'Violation and Order-related Offenses',
+    8: 'Weapons and Firearm Offenses'
     }
 
     # Decode the predicted crime type!
