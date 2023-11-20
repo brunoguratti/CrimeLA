@@ -3,7 +3,7 @@ import pickle as cPickle
 import streamlit as st
 import pandas as pd
 import numpy as np
-from sklearn.ensemble import ExtraTreesClassifier
+from sklearn.ensemble import RandomForstClassifier
 
 
 # Load any compressed pickle file
