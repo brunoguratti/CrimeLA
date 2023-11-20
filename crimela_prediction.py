@@ -1,3 +1,4 @@
+pip install scikit-learn
 import bz2
 import pickle
 import pickle as cPickle
