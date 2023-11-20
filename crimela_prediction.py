@@ -4,8 +4,8 @@ import pickle as cPickle
 import streamlit as st
 import pandas as pd
 import numpy as np
-import sklearn
-from sklearn.ensemble import ExtraTreesClassifier
+# import sklearn
+# from sklearn.ensemble import ExtraTreesClassifier
 
 
 # Load any compressed pickle file
