@@ -131,5 +131,4 @@ if st.sidebar.button('Predict Crime Type'):
 
     # Decode the predicted crime type!
     predicted_crime_type = reverse_mapping.get(int(prediction), 'Unknown')
-    st.write('Predicted Crime:', prediction)
     st.write('Predicted Crime Type:', predicted_crime_type)
