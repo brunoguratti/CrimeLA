@@ -1,4 +1,3 @@
-!pip install sklearn
 import bz2
 import pickle
 import pickle as cPickle
