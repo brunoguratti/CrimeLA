@@ -1,5 +1,3 @@
-numpy
-pandas
-statsmodels
+bz2
 scikit-learn
-streamlit
+pickle
