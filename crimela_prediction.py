@@ -1,9 +1,12 @@
+!pip install sklearn
 import bz2
 import pickle
 import pickle as cPickle
 import streamlit as st
 import pandas as pd
 import numpy as np
+from sklearn.ensemble import ExtraTreesClassifier
+
 
 # Load any compressed pickle file
 def decompress_pickle(file):
@@ -22,25 +25,26 @@ st.sidebar.title('Input Parameters')
 # List of areas
 area_options = [
     "77th Street",
-    "Pacific",
-    "Southwest",
-    "Hollywood",
-    "Southeast",
-    "Olympic",
-    "Newton",
-    "N Hollywood",
-    "Wilshire",
-    "Rampart",
-    "West LA",
-    "Northeast",
-    "Van Nuys",
-    "West Valley",
-    "Harbor",
-    "Topanga",
+    "Central",
     "Devonshire",
-    "Mission",
+    "Foothill",
+    "Harbor",
     "Hollenbeck",
-    "Foothill"
+    "Hollywood",
+    "Mission",
+    "N Hollywood",
+    "Newton",
+    "Northeast",
+    "Olympic",
+    "Pacific",
+    "Rampart",
+    "Southeast",
+    "Southwest",
+    "Topanga",
+    "Van Nuys",
+    "West LA",
+    "West Valley",
+    "Wilshire"
 ]
 
 # Create a Dropbox for selecting areas
@@ -127,4 +131,5 @@ if st.sidebar.button('Predict Crime Type'):
 
     # Decode the predicted crime type!
     predicted_crime_type = reverse_mapping.get(int(prediction), 'Unknown')
+    st.write('Predicted Crime:', prediction)
     st.write('Predicted Crime Type:', predicted_crime_type)
